@@ -18,25 +18,23 @@ $nameAndAges = [
     'Al Pacino' => 82,
 ];
 
-$newArray[] = asort($nameAndAges);
-
-foreach ($newArray as $arr => $value){
-    foreach ($value as $val) {
-        echo "{$val}";
-    }
-}
+// Задачи с этим массивом:
+// 1.1 сделать сортировку по возрасту, молодые в начале массива
+// здесь ваш код
+$nameAndAges[] = asort($nameAndAges);
+echo "<ul><li>" . implode("</li><li>", $nameAndAges) . "</li></ul><hr>";
 
 // 1.2 сделать сортировку по возрасту, молодые в конце массива
 // здесь ваш код
-//...
-//echo "<ul><li>" . implode("</li><li>", $nameAndAges) . "</li></ul><hr>";
+$nameAndAges[] = arsort($nameAndAges);
+echo "<ul><li>" . implode("</li><li>", $nameAndAges) . "</li></ul><hr>";
 
 // 1.3 сделать сортировку по имени, от A до Z
 // здесь ваш код
-//...
-//echo "<ul><li>" . implode("</li><li>", $nameAndAges) . "</li></ul><hr>";
+$nameAndAges[] = ksort($nameAndAges, $flags = SORT_STRING);
+echo "<ul><li>" . implode("</li><li>", $nameAndAges) . "</li></ul><hr>";
 
 // 1.4 сделать сортировку по имени, от Z до A
 // здесь ваш код
-//...
-//echo "<ul><li>" . implode("</li><li>", $nameAndAges) . "</li></ul><hr>";
+$nameAndAges[] = krsort($nameAndAges, $flags = SORT_STRING);
+echo "<ul><li>" . implode("</li><li>", $nameAndAges) . "</li></ul><hr>";
