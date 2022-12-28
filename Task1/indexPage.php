@@ -26,7 +26,7 @@ if (con == 0 && $rand1 != 0 && $rand2 != 0){
 }
 echo $result . "<br><br><br>";
 
-//Task 3
+//Task3
 $per1 = rand(1, 3); //Анна
 $per2 = rand(1, 3); //Лера
 define("cons1", $per1);
@@ -43,7 +43,7 @@ if (cons1 == cons2){
     }
 }echo "<br><br><br>";
 
-//Task 4
+//Task4
 $r1 = rand(1, 10);
 $r2 = rand(1, 10);
 echo "переменная 1 = " . $r1 . "<br>" . "переменная 2 = " . $r2 . "<br>";
